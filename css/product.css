@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #0e0e0e;
+    margin: 0;
+    padding: 0px;
+    color: #ffffff;
+}
+
+.product-container{
+    padding: 10px;
+}
+
+/* Imagem ou vídeo do produto */
+.product-media {
+    margin-bottom: 20px;
+}
+
+.product-media video {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+}
+
+/* Título do produto */
+#product-name {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+/* Descrição do produto */
+#product-description {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 10px 0 20px;
+}
+
+/* Preço do produto */
+.product-price {
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#exemplo {
+    color: rgb(107, 107, 255); /* Cor azul para o link */
+    text-decoration: none; /* Remover sublinhado */
+    cursor: pointer; /* Cursor será exibido apenas no link */
+}
+
+#exemplo:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+
+/* Botão Comprar */
+.buy-button {
+    background-color: #226160;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #1b4d4c;
+}
+
+#imagem{
+    border-radius: 10px;
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+    #product-name {
+        font-size: 1.5rem;
+    }
+    
+    #product-description {
+        font-size: 0.95rem;
+    }
+
+    .product-price {
+        font-size: 1.4rem;
+    }
+
+    .buy-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-container {
+        padding: 15px;
+    }
+
+    #product-name {
+        font-size: 1.4rem;
+    }
+
+    #product-description {
+        font-size: 0.9rem;
+    }
+
+    .product-price {
+        font-size: 1.2rem;
+    }
+
+    .buy-button {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+    }
+}
