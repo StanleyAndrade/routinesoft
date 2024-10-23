@@ -74,6 +74,9 @@ body {
 
 #imagem{
     border-radius: 10px;
+    max-width: 100%; /* A imagem nunca excederá a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+
 }
 
 /* Estilos responsivos para dispositivos móveis */
@@ -94,6 +97,8 @@ body {
         font-size: 1rem;
         padding: 8px 16px;
     }
+
+
 }
 
 @media (max-width: 480px) {
