@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conserto de Bugs e Problemas</title>
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <!-- Header com logo e navegação -->
+    <header class="header">
+        <div class="logo">Mercadinho Dev</div>
+        <nav class="nav-menu">
+            <!-- Ícone do menu hamburguer -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-links">
+                <li><a href="/index.html">Página Principal</a></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="product-container">
+        <!-- Seção de imagem ou vídeo -->
+        <div class="product-media">
+            <img id="imagem" src="/img/5.png" alt="Produto 3" width="600" height="400">
+        </div>
+        
+        <!-- Nome do Produto -->
+        <h1 id="product-name">Conserto de Bugs e Problemas</h1>
+        
+        <!-- Descrição do Produto -->
+        <p id="product-description">
+            Consertamos qualquer problema ou bug do seu: Site, Pagina de Venda, Quiz, Aplicativo, Sistema, Software.
+        </p>
+
+        <p id="aviso"><b>ATENÇÃO:</b> O preço varia de acordo com o grau de complexidade. A partir de R$90,00. Consultar pelo Whatsapp. <br>
+        </p>
+
+
+
+
+
+        
+        <!-- Preço do Produto -->
+        <br>
+
+        <div class="product-price">
+            <span>R$ 90,00</span>
+        </div>
+
+        <!-- Botão Comprar -->
+        
+        <button id="buy-button" class="buy-button"><a href="https://wa.me/5521977401773?text=Quero%20consertar%20um%20bug.%20">Solicitar pelo Whatsapp</a></button>
+    </div>
+
+    <script>
+        // Função para abrir e fechar o menu hamburguer no mobile
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
