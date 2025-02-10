@@ -105,6 +105,14 @@ a {
     margin-top: 10px; /* Adiciona espaço acima do preço */
 }
 
+.card .payment {
+    display: flex; /* Usar flex para alinhar itens se necessário */
+    align-items: baseline; /* Corrigir para baseline */
+    font-size: 15px; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-top: 10px; /* Adiciona espaço acima do preço */
+    font-weight: 400;
+}
+
 
 
 /* Header (Cabeçalho) */
