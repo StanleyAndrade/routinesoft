@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercadinho Dev</title>
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/headerEfooter.css">
     <link rel="stylesheet" href="/css/headerEfooter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,30 +14,16 @@
     <meta property="og:image" content="https://mercadinhodev.vercel.app/img/metatag.png" />
 </head>
 <body>
-    <!-- Header com logo e navegação -->
-    <header class="header">
-        <div class="logo">Mercadinho Dev</div>
-        <nav class="nav-menu">
-            <!-- Ícone do menu hamburguer -->
-            <div class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul id="nav-links">
-                <li><a href="#">Página Principal</a></li>
-                <!-- <li><a href="#">Quem Somos</a></li>
-                <li><a href="#">Fale Conosco</a></li> -->
-            </ul>
-        </nav>
-    </header>
+
+    <div id="header-container"></div>
+    <script src="/component/header.js"></script>
     <!-- Seção 1: Headline e Foto -->
     <section class="section-1">
         <div class="row">
             <div class="col-a">
                 <h1>Mercadinho Dev</h1>
                 <h2>O Mercadinho onde você encontra tudo de programação para o seu negócio. 💻</h2>
-                
+                <a href="https://wa.me/5521977401773" class="whatsapp-button"><img class="img2" src="/img/zap.webp" alt=""></a>
             </div>
             <div class="col-b">
                 <img src="/img/mercado2.png" alt="Imagem Tecnológica">
@@ -47,11 +33,12 @@
 
     <!-- Seção 2: Produtos -->
     <section class="section-2">
-        <a href="/produtos/quiz.html">
+
+        <a href="/produtos/dunsnumber.html">
             <div class="card">
-                <img src="/img/1.png" alt="Produto 3">
-                <p>Quiz interativo (Funil Interativo)</p>
-                <p class="preco">10x de R$35,74</p> <!-- Altere de id para class -->
+                <img src="/img/Duns Number.png" alt="Produto 3">
+                <p>Duns Number em 10 minutos a 24h</p>
+                <p class="preco">U$25</p> <!-- Altere de id para class -->
                 <p class="payment">Cartão de Crédito, Débito e Pix</p> <!-- Altere de id para class -->
             </div>
         </a>
@@ -60,7 +47,7 @@
             <div class="card">
                 <img src="/img/3.png" alt="Produto 3">
                 <p>Portfólio Bilingue: Português/Inglês</p>
-                <p class="preco">10x de R$35,74</p> <!-- Altere de id para class -->
+                <p class="preco">R$90 mensais</p> <!-- Altere de id para class -->
                 <p class="payment">Cartão de Crédito, Débito e Pix</p> <!-- Altere de id para class -->
             </div>
         </a>
@@ -69,7 +56,7 @@
             <div class="card">
                 <img src="/img/2.png" alt="Produto 3">
                 <p>Página de Venda VSL</p>
-                <p class="preco">10x de R$35,74</p> <!-- Altere de id para class -->
+                <p class="preco">R$90 mensais</p> <!-- Altere de id para class -->
                 <p class="payment">Cartão de Crédito, Débito e Pix</p> <!-- Altere de id para class -->
             </div>
         </a>
@@ -78,11 +65,21 @@
 
        <!-- Seção 3: Produtos -->
        <section class="section-2">
+
+       <a href="/produtos/quiz.html">
+        <div class="card">
+            <img src="/img/1.png" alt="Produto 3">
+            <p>Quiz interativo (Funil Interativo)</p>
+            <p class="preco">R$90 mensais</p> <!-- Altere de id para class -->
+            <p class="payment">Cartão de Crédito, Débito e Pix</p> <!-- Altere de id para class -->
+        </div>
+        </a>
+        
         <a href="/produtos/siteinsitucional.html">
             <div class="card">
                 <img src="/img/4.png" alt="Produto 3">
                 <p>Site Institucional</p>
-                <p class="preco">10x de R$35,74</p> <!-- Altere de id para class -->
+                <p class="preco">R$90 mensais</p> <!-- Altere de id para class -->
                 <p class="payment">Cartão de Crédito, Débito e Pix</p> <!-- Altere de id para class -->
             </div>
         </a>
@@ -91,36 +88,25 @@
             <div class="card">
                 <img src="/img/DALL·E 2024-10-22 15.28.21 - A modern smartphone with a form displayed on its screen. The form includes fields for 'Name', 'Email', and 'WhatsApp' with a title that reads 'Banco d.webp" alt="Produto 3" width="300" height="200">
                 <p>Banco de Dados na Nuvem</p>
-                <p class="preco">R$2.000,00</p> <!-- Altere de id para class -->
+                <p class="preco">10x de R$200</p> <!-- Altere de id para class -->
                 <p class="payment">Cartão de Crédito, Débito e Pix</p> <!-- Altere de id para class -->
 
             </div>
         </a>
 
-        <a href="/produtos/conserto.html">
+        <!-- <a href="/produtos/conserto.html">
             <div class="card">
                 <img src="/img/5.png" alt="Produto 3">
                 <p>Conserto de Bugs e Problemas</p>
-                <p class="preco">A partir de R$90</p> <!-- Altere de id para class -->
-                <p class="payment">Cartão de Crédito, Débito e Pix</p> <!-- Altere de id para class -->
-
+                <p class="preco">A partir de R$90</p> 
+                <p class="payment">Cartão de Crédito, Débito e Pix</p> 
             </div>
-        </a>
+        </a> -->
 
     </section>
 
-    <!-- Rodapé com direitos reservados -->
-    <footer class="footer">
-        <p>&copy; Todos os direitos reservados. Stanley Andrade, 2025</p>
-    </footer>
-
-    <script>
-        // Função para abrir e fechar o menu hamburguer no mobile
-        function toggleMenu() {
-            const navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('show');
-        }
-    </script>
+    <div id="footer-container"></div>
+    <script src="/component/footer.js"></script>
     <script src="scripts.js"></script>
     <script src="/js/product.js"></script>
 </body>
