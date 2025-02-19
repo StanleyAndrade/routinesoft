@@ -1,4 +1,2 @@
 User-agent: *
 Disallow:
-
-Sitemap: https://mercadinhodev.vercel.app/sitemap.xml
