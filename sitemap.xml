@@ -3,39 +3,49 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9	http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-	<url>
-		<loc>https://mercadinhodev.vercel.app/</loc>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://mercadinhodev.vercel.app/produtos/dunsnumber.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>0.99</priority>
-	</url>
-	<url>
-		<loc>https://mercadinhodev.vercel.app/produtos/portfolio.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>0.99</priority>
-	</url>
-	<url>
-		<loc>https://mercadinhodev.vercel.app/produtos/paginadevendavsl.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>0.99</priority>
-	</url>
-	<url>
-		<loc>https://mercadinhodev.vercel.app/produtos/quiz.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>0.99</priority>
-	</url>
-	<url>
-		<loc>https://mercadinhodev.vercel.app/produtos/siteinsitucional.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>0.99</priority>
-	</url>
-	<url>
-		<loc>https://mercadinhodev.vercel.app/produtos/bancodedados.html</loc>
-		<changefreq>daily</changefreq>
-		<priority>0.99</priority>
-	</url>
+	<!-- Página principal -->
+    <url>
+        <loc>https://mercadinhodev.vercel.app/</loc>
+        <lastmod>2025-02-17</lastmod>
+    </url>
+
+    <!-- Blog -->
+    <url>
+        <loc>https://mercadinhodev.vercel.app/blog/dunsnumber/D-U-N-S.html</loc>
+        <lastmod>2025-02-17</lastmod>
+    </url>
+    <url>
+        <loc>https://mercadinhodev.vercel.app/blog/dunsnumber/duns-number.html</loc>
+        <lastmod>2025-02-17</lastmod>
+    </url>
+
+    <!-- Produtos -->
+    <url>
+        <loc>https://mercadinhodev.vercel.app/produtos/bancodedados.html</loc>
+        <lastmod>2025-02-17</lastmod>
+    </url>
+    <url>
+        <loc>https://mercadinhodev.vercel.app/produtos/conserto.html</loc>
+        <lastmod>2025-02-17</lastmod>
+    </url>
+    <url>
+        <loc>https://mercadinhodev.vercel.app/produtos/dunsnumber.html</loc>
+        <lastmod>2025-02-17</lastmod>
+    </url>
+    <url>
+        <loc>https://mercadinhodev.vercel.app/produtos/paginadevendavsl.html</loc>
+        <lastmod>2025-02-17</lastmod>
+    </url>
+    <url>
+        <loc>https://mercadinhodev.vercel.app/produtos/portfolio.html</loc>
+        <lastmod>2025-02-17</lastmod>
+    </url>
+    <url>
+        <loc>https://mercadinhodev.vercel.app/produtos/quiz.html</loc>
+        <lastmod>2025-02-17</lastmod>
+    </url>
+    <url>
+        <loc>https://mercadinhodev.vercel.app/produtos/siteinsitucional.html</loc>
+        <lastmod>2025-02-17</lastmod>
+    </url>
 </urlset>
