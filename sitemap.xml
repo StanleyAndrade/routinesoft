@@ -1,60 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-    <!-- Página principal -->
-    <url>
-        <loc>https://mercadinhodev.vercel.app/</loc>
-        <priority>1.0</priority>
-        <changefreq>weekly</changefreq>
-    </url>
 
-    <!-- Blog -->
-    <url>
-        <loc>https://mercadinhodev.vercel.app/blog/dunsnumber/D-U-N-S.html</loc>
-        <priority>0.8</priority>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://mercadinhodev.vercel.app/blog/dunsnumber/duns-number.html</loc>
-        <priority>0.8</priority>
-        <changefreq>weekly</changefreq>
-    </url>
+<url>
+  <loc>https://mercadinhodev.vercel.app/</loc>
+  <lastmod>2025-02-19T17:28:51+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://mercadinhodev.vercel.app/produtos/dunsnumber.html</loc>
+  <lastmod>2025-02-19T17:28:51+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mercadinhodev.vercel.app/produtos/portfolio.html</loc>
+  <lastmod>2025-02-19T17:28:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mercadinhodev.vercel.app/produtos/paginadevendavsl.html</loc>
+  <lastmod>2025-02-19T17:28:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mercadinhodev.vercel.app/produtos/quiz.html</loc>
+  <lastmod>2025-02-19T17:28:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mercadinhodev.vercel.app/produtos/siteinsitucional.html</loc>
+  <lastmod>2025-02-19T17:28:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mercadinhodev.vercel.app/produtos/bancodedados.html</loc>
+  <lastmod>2025-02-19T17:28:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
-    <!-- Produtos -->
-    <url>
-        <loc>https://mercadinhodev.vercel.app/produtos/bancodedados.html</loc>
-        <priority>0.7</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://mercadinhodev.vercel.app/produtos/conserto.html</loc>
-        <priority>0.7</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://mercadinhodev.vercel.app/produtos/dunsnumber.html</loc>
-        <priority>0.7</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://mercadinhodev.vercel.app/produtos/paginadevendavsl.html</loc>
-        <priority>0.7</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://mercadinhodev.vercel.app/produtos/portfolio.html</loc>
-        <priority>0.7</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://mercadinhodev.vercel.app/produtos/quiz.html</loc>
-        <priority>0.7</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://mercadinhodev.vercel.app/produtos/siteinsitucional.html</loc>
-        <priority>0.7</priority>
-        <changefreq>monthly</changefreq>
-    </url>
 
 </urlset>
