@@ -3,7 +3,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background-color: #0e0e0e;
+    background-color: #02071b;
     margin: 0;
     padding: 0;
 }
@@ -67,7 +67,7 @@ a {
 }
 
 .card {
-    background-color: #202020;
+    background-color: #01040f;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 300px;
