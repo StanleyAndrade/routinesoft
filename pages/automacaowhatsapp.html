@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Automação de WhatsApp</title>
+  <meta name="description" content="Automatize seu Whatsapp, envie mensagens em massa e realize cobranças via WhatsApp com a Routine Soft.">
+  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="/css/headerEfooter.css" />
+</head>
+<body>
+  <div id="header-container"></div>
+  <script src="/component/header.js"></script>
+
+  <!-- Seção de introdução -->
+  <section class="section-1">
+    <div class="row">
+      <div class="col-a">
+        <h1>Automação de WhatsApp</h1>
+        <h2>Automatize seu whatsapp, envie mensagens em massa e realize cobranças pelo WhatsApp com a Routine Soft. 📲</h2>
+        <p>Nós configuramos tudo pra você, e te entregamos pronto pra você usar.</p>
+        <div class="div-button-sectin-1">
+          <a href=""><button class="btn-section-1">Contratar agora</button></a> 
+          <a href=""><button class="btn-section-1-2">Falar com atendente</button></a> 
+        </div>
+      </div>
+      <div class="col-b">
+        <img src="/img/whatsapp-automation.jpg" alt="Automação de WhatsApp">
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefícios da automação -->
+  <section class="section-2">
+    <div class="card">
+        <img src="/img/atendimento.png" alt="Atendimento Automatizado">
+        <h2>Automatize seu Whatsapp</h2>
+        <p class="payment">Deixe a IA responder seus clientes pelo Whatsapp. Reduza seu trabalho, fique livre para o mais importante: cuidar da sua empresa.</p>
+        <p class="preco">Solicite um orçamento</p>
+    </div>
+
+    <div class="card">
+        <img src="/img/disparo.png" alt="Envio em Massa">
+        <h2>Disparo em Massa</h2>
+        <p class="payment">Envie mensagens para vários números ao mesmo tempo. Chega de mandar mensagem pra um número de cada vez.</p>
+        <p class="preco">Solicite um orçamento</p>
+    </div>
+
+    <div class="card">
+        <img src="/img/cobranca.png" alt="Cobrança Automatizada">
+        <h2>Cobrança via WhatsApp</h2>
+        <p class="payment">Envie boletos, lembretes de pagamento e notificações de mensalidade pelo Whatsapp. Cobrar pelo Email é coisa do passado.</p>
+        <p class="preco">Solicite um orçamento</p>
+    </div>
+  </section>
+
+    <section class="section-3">
+        <div class="section-3-content">
+            <h2>Por que você precisa automatizar seu Whatsapp?</h2>
+            <p class="subtitle">
+              O empresário precisa usar seu tempo sendo empresário, gerenciando a empresa. Mas o que vemos hoje são empresários gastando todo
+              o seu tempo atendendo pessoas no Whatsapp, envindo cobranças, etc... Por que não deixar a Routine Soft cuidar disso pra você?
+            </p>
+        </div>
+    </section>
+
+    <div style="text-align: center; margin-bottom: 20px; margin-top: 70px;">
+      <div style="font-size: 30px;" class="plan-price" data-mensal="Plano Mensal" data-anual="Plano Anual">Plano Mensal</div>
+      <label class="switch-label">
+        <input type="checkbox" id="togglePlano">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="plans" id="planos">
+      <!-- Plano 1 -->
+      <div class="plan-card">
+        <div class="plan-title">Atendimento Automatizado</div>
+        <ul class="plan-description">
+          <li>1000 mensagens grátis (ver regulamento)</li>
+          <li>Robô de Atendimento</li>
+          <li>1 número de Whatsapp</li>
+          <li>Suporte humanizado 24h</li>
+          <div style="text-align: center;" class="plan-price" data-mensal="R$100 / mês" data-anual="R$1.100,00">R$ 100/mês</div>
+          <p class="credito-texto">Crédito recorrente, não desconta o limite do cartão</p>
+        </ul>
+        <button class="historia-mensal" onclick="window.open('https://wa.me/5521977401773', '_blank')"  >Assinar Plano Mensal</button>
+        <button class="historia-anual" onclick="window.open('https://wa.me/5521977401773', '_blank')" >Assinar Plano Anual</button>
+      </div>
+
+      <!-- Plano 2 -->
+      <div class="plan-card">
+        <div class="plan-title">Disparo em Massa</div>
+        <ul class="plan-description">
+          <li>R$0,50 por mensagem pra cada número enviado</li>
+          <li>1 número de Whatsapp</li>
+          <li>Suporte humanizado 24h</li>
+          <div style="text-align: center;" class="plan-price" data-mensal="R$49 + R$0,50 por mensagem" data-anual="R$539 + R$0,50 por mensagem">R$ 0,50/mensagem</div>
+          <p class="credito-texto">Compre créditos pra fazer os disparos</p>
+
+          <div class="simulador">
+            <label for="quantidade">Simule gratuitamente abaixo: Quantas pessoas você quer disparar uma mensagem?</label>
+            <input type="range" class="quantidade" min="0" max="1000" value="0" step="1">
+            
+            <div class="output">
+              <p><span class="num">0</span> mensagens</p>
+              <p>Total: <span class="valor">R$ 0,00</span></p>
+            </div>
+          </div>
+
+        </ul>
+        <button class="historia-mensal" onclick="window.open('https://wa.me/5521977401773', '_blank')">Assinar Plano Mensal</button>
+        <button class="historia-anual" onclick="window.open('https://wa.me/5521977401773', '_blank')"></a>Assinar Plano Anual</button>
+      </div>
+
+      <!-- Plano 3 -->
+      <div class="plan-card">
+        <div class="plan-title">Cobrança via Whatsapp</div>
+        <ul class="plan-description">
+          <li>R$0,50 por mensagem pra cada número enviado</li>
+          <li>1 número de Whatsapp</li>
+          <li>Suporte humanizado 24h</li>
+          <div style="text-align: center;" class="plan-price" data-mensal="R$200 + R$0,50 por mensagem" data-anual="R$2.200,00 + R$0,50 por mensagem">R$ 59,98/mês</div>
+          <p class="credito-texto">Compre créditos pra fazer os disparos das cobranças</p>
+
+          <div class="simulador">
+            <label for="quantidade">Simule gratuitamente abaixo: Quantas pessoas você quer cobrar pelo Whatsapp?</label>
+            <input type="range" class="quantidade" min="0" max="1000" value="0" step="1">
+            
+            <div class="output">
+              <p><span class="num">0</span> pessoas</p>
+              <p>Total: <span class="valor">R$ 0,00</span></p>
+            </div>
+          </div>
+
+        </ul>
+        <button class="historia-mensal" onclick="window.open('https://wa.me/5521977401773', '_blank')">Assinar Plano Mensal</button>
+        <button class="historia-anual" onclick="window.open('https://wa.me/5521977401773', '_blank')"></a>Assinar Plano Anual</button>
+      </div>
+    </div>
+
+  <div id="footer-container"></div>
+  <script src="/component/footer.js"></script>
+
+  <a href="https://wa.me/5521977401773" target="_blank" class="whatsapp-float" aria-label="Conversar no WhatsApp">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+  </a>
+</body>
+
+<script>
+    function assinar(plano) {
+      alert(`Você selecionou o ${plano}! Em breve, redirecionaremos para o pagamento.`);
+    }
+</script>
+
+<script>
+  const toggle = document.getElementById('togglePlano');
+  const prices = document.querySelectorAll('.plan-price');
+  const btnMensal = document.querySelectorAll('.historia-mensal');
+  const btnAnual = document.querySelectorAll('.historia-anual');
+  const creditotx = document.querySelectorAll('.credito-texto')
+
+
+  function atualizarVisibilidade() {
+    if (toggle.checked) {
+      // Preço anual
+      prices.forEach(price => {
+        price.textContent = price.getAttribute('data-anual');
+      });
+
+      // Mostra só botões anuais
+      btnMensal.forEach(btn => btn.style.display = 'none');
+      creditotx.forEach(btn => btn.style.display = 'none');
+      btnAnual.forEach(btn => btn.style.display = 'inline-block');
+    } else {
+      // Preço mensal
+      prices.forEach(price => {
+        price.textContent = price.getAttribute('data-mensal');
+      });
+
+      // Mostra só botões mensais
+      btnMensal.forEach(btn => btn.style.display = 'inline-block');
+      creditotx.forEach(btn => btn.style.display = 'inline-block');
+      btnAnual.forEach(btn => btn.style.display = 'none');
+    }
+  }
+
+  toggle.addEventListener('change', atualizarVisibilidade);
+  window.addEventListener('DOMContentLoaded', atualizarVisibilidade);
+</script>
+
+<script>
+  const images = document.querySelectorAll('.carousel-image');
+  let current = 0;
+
+  function showNextImage() {
+    images[current].classList.remove('active');
+    current = (current + 1) % images.length;
+    images[current].classList.add('active');
+  }
+
+  setInterval(showNextImage, 3000); // muda a imagem a cada 1 segundo
+</script>
+
+<script>
+  const simuladores = document.querySelectorAll('.simulador');
+  const precoPorPessoa = 0.50;
+
+  simuladores.forEach(simulador => {
+    const range = simulador.querySelector('.quantidade');
+    const numSpan = simulador.querySelector('.num');
+    const valorSpan = simulador.querySelector('.valor');
+
+    range.addEventListener('input', () => {
+      const quantidade = parseInt(range.value);
+      const valor = (quantidade * precoPorPessoa).toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
+      });
+
+      numSpan.textContent = quantidade;
+      valorSpan.textContent = valor;
+    });
+  });
+</script>
+
+</html>
