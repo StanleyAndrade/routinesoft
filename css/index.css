@@ -337,6 +337,10 @@ input[type="range"] {
   font-weight: bold;
 }
 
+.img-principal{
+  width: 60%;
+}
+
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
     .product-container {
