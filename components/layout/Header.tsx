@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 export default function Header() {
 	return (
@@ -26,6 +27,7 @@ export default function Header() {
 					</ul>
 				</nav>
 			</div>
+			<LanguageSwitcher />
 		</header>
 	);
 }
