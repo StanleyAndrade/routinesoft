@@ -35,3 +35,35 @@ export function getArticles(locale: string): Article[] {
     };
   });
 }
+
+export function getArticleBySlug(
+  slug: string,
+  locale: string
+) {
+  const articlesFolders = fs.readdirSync(contentDirectory);
+
+  for (const folder of articlesFolders) {
+    const filePath = path.join(
+      contentDirectory,
+      folder,
+      `${locale}.mdx`
+    );
+
+    const fileContent = fs.readFileSync(filePath, "utf-8");
+
+    const { data, content } = matter(fileContent);
+
+    if (data.slug === slug) {
+      return {
+        title: data.title,
+        description: data.description,
+        date: data.date,
+        author: data.author,
+        slug: data.slug,
+        content,
+      };
+    }
+  }
+
+  return null;
+}
