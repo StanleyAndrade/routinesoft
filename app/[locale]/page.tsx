@@ -1,3 +1,5 @@
+import { getDictionary } from "@/lib/i18n";
+
 type Props = {
   params: Promise<{
     locale: string;
@@ -7,16 +9,16 @@ type Props = {
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
 
+  const dictionary = getDictionary(locale);
+
   return (
     <>
-      <h1>RoutineSoft</h1>
+      <h1>
+        {dictionary.home.title}
+      </h1>
 
       <p>
-        Idioma atual: {locale}
-      </p>
-
-      <p>
-        Desenvolvimento de software, automações e soluções web.
+        {dictionary.home.description}
       </p>
     </>
   );

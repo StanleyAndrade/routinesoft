@@ -1,0 +1,13 @@
+{
+  "home": {
+    "title": "RoutineSoft",
+    "description": "Desenvolvimento de software, automações e soluções web."
+  },
+  "menu": {
+    "home": "Início",
+    "blog": "Blog"
+  },
+  "blog": {
+    "title": "Blog"
+  }
+}
