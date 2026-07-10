@@ -313,9 +313,13 @@ export default async function HomePage({
           <p className="mt-12 mb-12 text-white-400 text-4xl md:text-4xl">
             {content.whatWeDo.title}
           </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-3">
+          <div className="mt-6 flex flex-col items-center justify-center gap-3 md:flex-row md:flex-wrap">
             {content.whatWeDo.items.map((item) => (
-              <a key={item} href="#myform" className="card px-8 py-6 rounded-2xl text-center w-44">
+              <a
+                key={item}
+                href="#myform"
+                className="card w-full max-w-xs px-8 py-6 rounded-2xl text-center md:w-44"
+              >
                 <div className="text-gray-200 font-medium">{item}</div>
               </a>
             ))}
@@ -323,37 +327,77 @@ export default async function HomePage({
         </section>
 
         {/* Como funciona */}
-        <section className="hero-bg w-full py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-1">
-            {content.howItWorks.title} <span className="text-green-400">{content.howItWorks.titleHighlight}</span>
-          </h2>
-          <p className="text-white-300 max-w-xl mb-8 mx-auto">
-            {content.howItWorks.subtitle}
-          </p>
+<section className="hero-bg w-full py-24 px-6 text-center">
+  <h2 className="mb-1 text-3xl font-semibold md:text-4xl">
+    {content.howItWorks.title}{" "}
+    <span className="text-green-400">
+      {content.howItWorks.titleHighlight}
+    </span>
+  </h2>
 
-          <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-24 text-gray-300">
-            {stepIcons.map((icon, index) => {
-              const step = content.howItWorks.steps[index];
-              return (
-                <div key={step.title} className="flex flex-col items-center">
-                  <div className="card w-16 h-16 rounded-2xl flex items-center justify-center mb-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-8 w-8 text-green-400"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={icon} />
-                    </svg>
-                  </div>
-                  <p className="text-2xl font-bold">{step.title}</p>
-                  <p className="max-w-[200px] text-sm">{step.description}</p>
-                </div>
-              );
-            })}
+  <p className="mx-auto mb-12 max-w-xl text-gray-300">
+    {content.howItWorks.subtitle}
+  </p>
+
+  <div
+    className="
+      mx-auto
+      flex
+      max-w-6xl
+      flex-col
+      items-center
+      gap-10
+
+      md:flex-row
+      md:justify-center
+      md:items-start
+      md:gap-24
+    "
+  >
+    {stepIcons.map((icon, index) => {
+      const step = content.howItWorks.steps[index];
+
+      return (
+        <div
+          key={step.title}
+          className="
+            flex
+            w-full
+            max-w-xs
+            flex-col
+            items-center
+            text-center
+          "
+        >
+          <div className="card mb-5 flex h-16 w-16 items-center justify-center rounded-2xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-8 w-8 text-green-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d={icon}
+              />
+            </svg>
           </div>
-        </section>
+
+          <h3 className="mb-2 text-2xl font-bold">
+            {step.title}
+          </h3>
+
+          <p className="text-sm leading-7 text-gray-300">
+            {step.description}
+          </p>
+        </div>
+      );
+    })}
+  </div>
+</section>
 
         {/* O que oferecemos */}
         <section id="technology" className="w-full py-24 text-center hero-bg">
