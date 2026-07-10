@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
   --background: #ffffff;
@@ -23,4 +24,95 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.prose {
+  max-width: none;
+
+  --tw-prose-body: #ffffff;
+  --tw-prose-headings: #ffffff;
+  --tw-prose-lead: #ffffff;
+  --tw-prose-links: #60a5fa;
+  --tw-prose-bold: #ffffff;
+  --tw-prose-counters: #ffffff;
+  --tw-prose-bullets: #ffffff;
+  --tw-prose-hr: #444444;
+  --tw-prose-quotes: #ffffff;
+  --tw-prose-quote-borders: #666666;
+  --tw-prose-captions: #ffffff;
+  --tw-prose-code: #ffffff;
+  --tw-prose-pre-code: #ffffff;
+  --tw-prose-pre-bg: #111111;
+  --tw-prose-th-borders: #ffffff;
+  --tw-prose-td-borders: #ffffff;
+}
+
+.prose h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem;
+}
+
+.prose h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem;
+}
+
+.prose h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0 .75rem;
+}
+
+.prose p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.prose ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.prose ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid #ffffff;
+  padding: .75rem;
+}
+
+.prose th {
+  background: #1f1f1f;
+}
+
+.prose pre {
+  background: #111111;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.prose code {
+  background: #1e1e1e;
+  padding: .2rem .4rem;
+  border-radius: 4px;
+}
+
+.prose blockquote {
+  border-left: 4px solid #666666;
+  padding-left: 1rem;
+  font-style: italic;
 }

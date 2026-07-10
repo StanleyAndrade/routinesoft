@@ -1,69 +1,111 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { locales, type Locale } from "./i18n";
 
-type Article = {
+export type Article = {
+  id: string;
+  locale: Locale;
+
   title: string;
   description: string;
+
   date: string;
   author: string;
+
   slug: string;
+
+  content: string;
 };
 
 const contentDirectory = path.join(process.cwd(), "content");
 
-export function getArticles(locale: string): Article[] {
-  const articlesFolders = fs.readdirSync(contentDirectory);
+function readArticles(): Article[] {
+  const folders = fs.readdirSync(contentDirectory);
 
-  return articlesFolders.map((folder) => {
-    const filePath = path.join(
-      contentDirectory,
-      folder,
-      `${locale}.mdx`
-    );
+  const articles: Article[] = [];
 
-    const fileContent = fs.readFileSync(filePath, "utf-8");
+  for (const folder of folders) {
+    for (const locale of locales) {
+      const filePath = path.join(
+        contentDirectory,
+        folder,
+        `${locale}.mdx`
+      );
 
-    const { data } = matter(fileContent);
+      if (!fs.existsSync(filePath)) {
+        continue;
+      }
 
-    return {
-      title: data.title,
-      description: data.description,
-      date: data.date,
-      author: data.author,
-      slug: data.slug,
-    };
-  });
+      const file = fs.readFileSync(filePath, "utf-8");
+
+      const { data, content } = matter(file);
+
+      articles.push({
+        id: folder, // vamos usar o nome da pasta como identificador
+        locale,
+
+        title: data.title,
+        description: data.description,
+
+        date: data.date,
+        author: data.author,
+
+        slug: data.slug,
+
+        content,
+      });
+    }
+  }
+
+  return articles;
+}
+
+export function getArticles(locale: Locale): Article[] {
+  return readArticles().filter(
+    (article) => article.locale === locale
+  );
 }
 
 export function getArticleBySlug(
   slug: string,
-  locale: string
+  locale: Locale
 ) {
-  const articlesFolders = fs.readdirSync(contentDirectory);
+  return (
+    readArticles().find(
+      (article) =>
+        article.slug === slug &&
+        article.locale === locale
+    ) ?? null
+  );
+}
 
-  for (const folder of articlesFolders) {
-    const filePath = path.join(
-      contentDirectory,
-      folder,
-      `${locale}.mdx`
-    );
+export function getAllArticles() {
+  return readArticles();
+}
 
-    const fileContent = fs.readFileSync(filePath, "utf-8");
+export function getTranslatedSlug(
+  currentSlug: string,
+  currentLocale: Locale,
+  targetLocale: Locale
+) {
+  const articles = readArticles();
 
-    const { data, content } = matter(fileContent);
+  const current = articles.find(
+    (article) =>
+      article.slug === currentSlug &&
+      article.locale === currentLocale
+  );
 
-    if (data.slug === slug) {
-      return {
-        title: data.title,
-        description: data.description,
-        date: data.date,
-        author: data.author,
-        slug: data.slug,
-        content,
-      };
-    }
+  if (!current) {
+    return null;
   }
 
-  return null;
+  const translated = articles.find(
+    (article) =>
+      article.id === current.id &&
+      article.locale === targetLocale
+  );
+
+  return translated?.slug ?? null;
 }
