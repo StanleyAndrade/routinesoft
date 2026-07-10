@@ -1,48 +1,14 @@
-import { NextRequest, NextResponse } from "next/server";
-
-const locales = ["pt", "en"];
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
 export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
-
-  // Ignora arquivos estáticos e APIs
-  if (
-    pathname.startsWith("/_next") ||
-    pathname.startsWith("/api") ||
-    pathname.includes(".")
-  ) {
-    return NextResponse.next();
+  if (request.nextUrl.pathname === "/") {
+    return NextResponse.redirect(new URL("/pt", request.url));
   }
 
-  // Se já possui o locale na URL, continua normalmente
-  const hasLocale = locales.some(
-    (locale) =>
-      pathname === `/${locale}` ||
-      pathname.startsWith(`/${locale}/`)
-  );
-
-  if (hasLocale) {
-    return NextResponse.next();
-  }
-
-  // Detecta o idioma do navegador
-  const acceptLanguage =
-    request.headers.get("accept-language") ?? "";
-
-  const preferredLocale = acceptLanguage
-    .toLowerCase()
-    .startsWith("pt")
-    ? "pt"
-    : "en";
-
-  // Redireciona para /pt ou /en
-  return NextResponse.redirect(
-    new URL(`/${preferredLocale}${pathname}`, request.url)
-  );
+  return NextResponse.next();
 }
 
 export const config = {
-  matcher: [
-    "/((?!_next/static|_next/image|favicon.ico).*)",
-  ],
+  matcher: ["/:path*"],
 };
