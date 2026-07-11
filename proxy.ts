@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 const locales = ["pt", "en"];
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Ignora arquivos estáticos e APIs
@@ -26,12 +26,9 @@ export function middleware(request: NextRequest) {
   }
 
   // Detecta o idioma do navegador
-  const acceptLanguage =
-    request.headers.get("accept-language") ?? "";
+  const acceptLanguage = request.headers.get("accept-language") ?? "";
 
-  const preferredLocale = acceptLanguage
-    .toLowerCase()
-    .startsWith("pt")
+  const preferredLocale = acceptLanguage.toLowerCase().startsWith("pt")
     ? "pt"
     : "en";
 
@@ -42,8 +39,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  runtime: "nodejs",
-  matcher: [
-    "/((?!_next/static|_next/image|favicon.ico).*)",
-  ],
+  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
 };
