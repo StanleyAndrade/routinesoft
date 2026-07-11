@@ -13,35 +13,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://routinesoft.com"),
+  metadataBase: new URL("https://www.routinesoft.com"),
 
   title: {
     default: "RoutineSoft",
     template: "%s | RoutineSoft",
   },
 
-  description:
-    "Desenvolvimento de aplicativos, sites e softwares.",
-
-  robots: {
-    index: true,
-    follow: true,
-  },
+  description: "Desenvolvimento de aplicativos, sites e softwares.",
 
   openGraph: {
     title: "RoutineSoft",
-    description:
-      "Desenvolvimento de aplicativos, sites e softwares.",
+    description: "Desenvolvimento de aplicativos, sites e softwares.",
+    url: "https://www.routinesoft.com",
     siteName: "RoutineSoft",
-    type: "website",
     locale: "pt_BR",
+    type: "website",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "RoutineSoft",
+      },
+    ],
   },
 
   twitter: {
     card: "summary_large_image",
     title: "RoutineSoft",
-    description:
-      "Desenvolvimento de aplicativos, sites e softwares.",
+    description: "Desenvolvimento de aplicativos, sites e softwares.",
+    images: ["/opengraph-image.png"],
   },
 };
 

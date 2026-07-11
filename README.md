@@ -6,7 +6,7 @@ A modern, multilingual blog built with **Next.js**, focused on performance, SEO,
 
 ## 🚀 Live Demo
 
-> https://routinesoft.com/
+> https://www.routinesoft.com/
 
 ---
 
@@ -246,7 +246,7 @@ Backend & Mobile Developer
 
 - GitHub: https://github.com/stanleyandrade
 - LinkedIn: https://linkedin.com/in/stanleyandrade
-- Portfolio: https://routinesoft.com
+- Portfolio: https://www.routinesoft.com
 
 ---
 

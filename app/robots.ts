@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
     },
 
-    sitemap: "https://routinesoft.com/sitemap.xml",
+    sitemap: "https://www.routinesoft.com/sitemap.xml",
   };
 }
