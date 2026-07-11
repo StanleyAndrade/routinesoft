@@ -504,7 +504,7 @@ export default async function HomePage({
             <input type="hidden" name="Product" value="Home" />
             <input type="hidden" name="_subject" value="Lead - RoutineSoft" />
             <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" value="https://www.routinesoft.com/pages/thankyou.html" />
+            <input type="hidden" name="_next" value="https://www.routinesoft.com/en/thank-you" />
 
             <button
               type="submit"

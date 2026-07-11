@@ -140,6 +140,10 @@ export default async function QuotePage({
             value="false"
           />
 
+          <input type="hidden" name="Product" value="Quote Page" />
+
+          <input type="hidden" name="_next" value="https://www.routinesoft.com/en/thank-you" />
+
           <button
             type="submit"
             className="mt-4 rounded-full bg-gradient-to-r from-green-500 to-emerald-600 py-4 text-lg font-semibold text-white transition hover:scale-[1.02]"
